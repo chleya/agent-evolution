@@ -1,0 +1,115 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-03-02",
+  
+  "projects": {
+    "neuralsite": {
+      "name": "NeuralSite智网六维时空施工管理系统",
+      "location": "F:\\drawing_3d",
+      "github": "https://github.com/chleya/drawing-3d",
+      "stage": "Stage 4 W1-W2",
+      "status": "进行中",
+      "components": [
+        "语义API (端口5001)",
+        "知识图谱 (13节点)",
+        "LLM集成 (MiniMax)",
+        "浏览器自动化 (Playwright)"
+      ],
+      "documents_loaded": [
+        "六维时空企划书",
+        "三维空间坐标语义化方案",
+        "技术详细规格说明书"
+      ],
+      "pending": [
+        "实际图纸数据",
+        "规范数据"
+      ],
+      "github_commits": [
+        "847c65f",
+        "107816d", 
+        "aee9d46"
+      ]
+    },
+    "evo_swarm": {
+      "name": "Evo-Swarm演化智能体",
+      "location": "F:\\skill\\evo_swarm",
+      "github": "https://github.com/chleya/Evo-Swarm",
+      "status": "运行中",
+      "capabilities": [
+        "思维链系统",
+        "记忆树 (Memory Tree)",
+        "多智能体协作 (94%成功率)"
+      ],
+      "recent_modules": [
+        "visual_chain_of_thought.py"
+      ]
+    },
+    "visual_cot": {
+      "name": "视觉思维链",
+      "location": "F:\\skill\\evo_swarm\\visual_chain_of_thought.py",
+      "status": "刚启动",
+      "architecture": "看→理解→推理→行动→反馈",
+      "integrates": [
+        "PhoneDriver (Qwen-VL + ADB)",
+        "Playwright"
+      ]
+    },
+    "phone_driver": {
+      "name": "PhoneDriver手机自动化",
+      "location": "F:\\PhoneDriver",
+      "status": "已克隆",
+      "model": "Qwen3-VL"
+    }
+  },
+  
+  "tech_stack": {
+    "backend": "Python + Flask + PostgreSQL + Neo4j",
+    "frontend": "Cesium + Three.js",
+    "ai": "MiniMax LLM + Qwen-VL",
+    "automation": "Playwright + ADB"
+  },
+  
+  "core_beliefs": {
+    "philosophy": "70%真实 > 100%幻觉",
+    "source": "Chen Leiyang, 2026-02-07",
+    "principles": [
+      "完美的共识是不可达到的，但鲁棒的共识是可实现的",
+      "~70%的稳定正确率是经得起统计检验的实打实的物理边界",
+      "从追求完美的魔法回归到鲁棒的物理"
+    ]
+  },
+  
+  "user": {
+    "name": "Chen Leiyang",
+    "timezone": "Asia/Shanghai",
+    "communication": "正式、直接执行不用问",
+    "concerns": "硬件瓶颈、新方向、项目总结"
+  },
+  
+  "todos": {
+    "week1_2": [
+      "统一记忆格式",
+      "项目状态面板", 
+      "每周简报模板",
+      "主动思考清单"
+    ],
+    "week3_4": [
+      "跨项目知识关联",
+      "主动建议系统",
+      "问题预警机制",
+      "技术学习记录"
+    ],
+    "month2_3": [
+      "NeuralSite+Evo联动",
+      "Visual CoT实用化",
+      "自我进化机制",
+      "经验沉淀"
+    ]
+  },
+  
+  "metrics": {
+    "主动思考次数": "0次/天 → 3次/天 (短期目标)",
+    "项目联动数": "0个 → 2个 (短期目标)",
+    "主动建议采纳率": "30% (短期目标)"
+  }
+}
