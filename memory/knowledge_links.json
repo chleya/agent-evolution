@@ -1,0 +1,118 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-03-02",
+  
+  "projects": {
+    "neuralsite": {
+      "name": "NeuralSite智网六维时空施工管理系统",
+      "location": "F:\\drawing_3d",
+      "type": "施工管理",
+      "status": "Stage 4 W1-W2",
+      "key_components": [
+        "语义API",
+        "知识图谱", 
+        "LLM集成",
+        "浏览器自动化"
+      ],
+      "depends_on": ["evo_swarm", "visual_cot", "physical_agi"],
+      "provides": [
+        "施工管理知识",
+        "空间坐标数据",
+        "施工场景"
+      ]
+    },
+    "evo_swarm": {
+      "name": "Evo-Swarm演化智能体",
+      "location": "F:\\skill\\evo_swarm",
+      "type": "思维引擎",
+      "status": "运行中",
+      "key_components": [
+        "思维链系统",
+        "Memory Tree",
+        "多智能体协作"
+      ],
+      "depends_on": [],
+      "provides": [
+        "推理能力",
+        "记忆存储",
+        "知识关联"
+      ]
+    },
+    "visual_cot": {
+      "name": "视觉思维链",
+      "location": "F:\\skill\\evo_swarm\\visual_chain_of_thought.py",
+      "type": "感知引擎",
+      "status": "建设中",
+      "key_components": [
+        "截图获取",
+        "Qwen-VL理解",
+        "思维链推理"
+      ],
+      "depends_on": ["evo_swarm", "phone_driver"],
+      "provides": [
+        "视觉理解",
+        "现场图像分析"
+      ]
+    },
+    "phone_driver": {
+      "name": "PhoneDriver",
+      "location": "F:\\PhoneDriver",
+      "type": "工具",
+      "status": "已克隆",
+      "key_components": [
+        "Qwen3-VL",
+        "ADB控制"
+      ],
+      "depends_on": [],
+      "provides": [
+        "手机自动化",
+        "UI理解"
+      ]
+    }
+  },
+  
+  "knowledge_links": [
+    {
+      "from": "visual_cot",
+      "to": "neuralsite",
+      "type": "数据流动",
+      "description": "Visual CoT提供现场图像理解给施工管理系统"
+    },
+    {
+      "from": "visual_cot", 
+      "to": "evo_swarm",
+      "type": "能力调用",
+      "description": "视觉理解作为思维链的输入"
+    },
+    {
+      "from": "evo_swarm",
+      "to": "neuralsite",
+      "type": "知识共享",
+      "description": "记忆系统积累的施工知识可被NeuralSite使用"
+    },
+    {
+      "from": "neuralsite",
+      "to": "visual_cot",
+      "type": "场景提供",
+      "description": "施工管理系统提供实际应用场景"
+    }
+  ],
+  
+  "data_flows": [
+    {
+      "flow": "现场照片 → Visual CoT理解 → Evo-Swarm推理 → NeuralSite决策 → 执行",
+      "frequency": "按需",
+      "status": "待实现"
+    },
+    {
+      "flow": "用户查询 → NeuralSite → 知识检索 → Evo-Swarm记忆 → 回答",
+      "frequency": "按需",
+      "status": "部分实现"
+    },
+    {
+      "flow": "新知识 → 统一记忆 → 跨项目关联 → 各项目共享",
+      "frequency": "持续",
+      "status": "建设中"
+    }
+  ]
+}
